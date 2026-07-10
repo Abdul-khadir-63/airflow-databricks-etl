@@ -6,7 +6,7 @@ from airflow.hooks.base import BaseHook
 from airflow.operators.python import get_current_context
 
 
-from utils.databricks_validation import *
+from  utils.databricks_validation import *
 
 
 @dag(
