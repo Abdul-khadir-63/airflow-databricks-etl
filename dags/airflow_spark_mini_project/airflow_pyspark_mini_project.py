@@ -42,7 +42,7 @@ def airflow_pyspark_pipeline():
     # Validation
     # ---------------------------------------------------
 
-    run_validation = DatabricksRunNowOperator
+    run_validation = DatabricksRunNowOperator(
         task_id="run_validation",
         databricks_conn_id="databricks_default",
         job_id=144199432296402,
