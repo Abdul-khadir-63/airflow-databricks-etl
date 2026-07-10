@@ -32,7 +32,7 @@ def airflow_pyspark_pipeline():
     # Silver
     # ---------------------------------------------------
 
-    run_silver = DatabricksRunNowOperator
+    run_silver = DatabricksRunNowOperator(
         task_id="run_silver",
         databricks_conn_id="databricks_default",
         job_id=78935676834460,
